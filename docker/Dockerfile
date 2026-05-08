@@ -103,4 +103,4 @@ HEALTHCHECK --interval=30s --timeout=5s --start-period=45s --retries=3 \
 
 # The distroless image's ENTRYPOINT is already ["/nodejs/bin/node"],
 # so CMD only needs the script path.
-CMD ["packages/backend/dist/main.js"]
+CMD ["--experimental-require-module", "packages/backend/dist/main.js"]
