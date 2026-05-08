@@ -37,7 +37,7 @@
     "dev": "turbo dev --filter=manifest-frontend --filter=manifest-wingman",
     "build": "turbo build",
     "test": "turbo test",
-    "start": "node packages/backend/dist/main.js",
+    "start": "node --experimental-require-module packages/backend/dist/main.js",
     "check:api-prefix": "node scripts/check-api-prefix.js",
     "lint": "eslint packages/shared/src packages/backend/src packages/frontend/src packages/wingman/src",
     "format": "prettier --write 'packages/*/src/**/*.{ts,tsx,css}'",
